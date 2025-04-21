@@ -1,0 +1,386 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f7f9fc;
+  color: #1e1e1e;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 30px; 
+  font-weight: bold;
+  margin-bottom: 20px; 
+  color: #333333;
+}
+
+.sidebar input {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.template-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden; 
+  box-sizing: border-box; 
+}
+
+.template-container h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.template-list {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar .template-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.template-item {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center; 
+}
+
+.template-item:hover {
+  background-color: #e6e6e6;
+}
+
+.template-item.active {
+  background-color: #3366ff;
+  color: #ffffff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.content-header h2 {
+  font-size: 30px; 
+  font-weight: bold;
+  color: #333333; 
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+.content-header .action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+
+.action-buttons button {
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  color: #333333;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.action-buttons button:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.content-body {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  gap: 10px; 
+  overflow: hidden; 
+}
+
+.content-section {
+  flex: 1; 
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  box-sizing: border-box;
+}
+
+.content-section h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.content-section ul {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.content-section li {
+  font-size: 14px;
+  color: #666666;
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.footer-buttons button {
+  padding: 10px 25px; 
+  border-radius: 20px; 
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-buttons button:first-child {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.footer-buttons button:first-child:hover {
+  background-color: #f0f0f0;
+}
+
+.footer-buttons button:last-child {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+}
+
+.footer-buttons button:last-child:hover {
+  background-color: #333333;
+}
+
+.sidebar-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.sidebar-icons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar-icons img:hover {
+  opacity: 0.7;
+}
+
+.sidebar-edit-button {
+  align-self: flex-start; 
+  margin-top: auto; 
+  padding: 10px;
+  background-color: #000000; 
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar-edit-button:hover {
+  background-color: #333333; 
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.content-header h2 img {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.content-body {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content-section:last-child {
+  margin-top: auto; 
+}
+
+.content-section {
+  background-color: #ffffff;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.content-section h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content-section p {
+  font-size: 14px;
+  color: #666666;
+  white-space: pre-line; 
+}
+
+.info-icon {
+  display: inline-block;
+  margin-left: 8px; 
+  font-size: 14px; 
+  font-weight: bold;
+  font-style: normal; 
+  color: #666666; 
+  border: 2px solid #666666; 
+  border-radius: 50%; 
+  width: 20px; 
+  height: 20px; 
+  text-align: center;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.info-icon:hover {
+  color: #333333; 
+  border-color: #333333; 
+}
+
+.search-container {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%; 
+}
+
+.search-container input {
+  width: 100%; 
+  padding: 10px 40px 10px 10px; 
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box; 
+}
+
+.search-container .search-icon {
+  position: absolute;
+  right: 10px; 
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: #666666; 
+}
+
+.root-canal-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.root-canal-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.info-icon {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #666666;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 18px;
+  margin-left: 8px;
+}
+
+.delete-button {
+  background-color: transparent; 
+  border: none; 
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.delete-button:hover {
+  transform: scale(1.1); 
+}
+
+.delete-icon {
+  width: 20px;
+  height: 20px;
+  color: #666666; 
+}
+
+.delete-button:hover .delete-icon {
+  color: #333333; 
+}
